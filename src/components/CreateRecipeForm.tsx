@@ -22,7 +22,7 @@ const CreateRecipeForm = (): JSX.Element => {
             ingredients: ingredients,
             directions: directions
         }
-        createRecipe(newRecipe)
+        //createRecipe(newRecipe)
     }
     return (
         <form onSubmit={handleSubmit}>
