@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { Recipe } from '../types'
 const baseURL = '/api/recipes'
-type NewRecipe = Omit<Recipe, '_id'>
+type NewRecipe = Omit<Recipe, '_id'| 'rating'|'creator'>
 
 
 export const createRecipe = async (recipe: NewRecipe, userToken: string): Promise<Recipe> => {

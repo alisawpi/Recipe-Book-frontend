@@ -10,6 +10,7 @@ import { useSelector } from 'react-redux'
 import { RootState } from './state/store'
 import { logoutUser } from './services/auth'
 import MessageAlert from './components/MessageAlert'
+import CreateRecipeForm from "./components/CreateRecipeForm"
 
 const App = () => {
     const user = useSelector((state: RootState) => state.user.user)
@@ -49,6 +50,9 @@ const App = () => {
                 </Route>
                 <Route path='/recipes/:id'>
                     <RecipePage />
+                </Route>
+                <Route path='/create'>
+                    <CreateRecipeForm/>
                 </Route>
                 <Route path='/'>
                     <RecipeList />

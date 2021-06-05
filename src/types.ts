@@ -1,12 +1,12 @@
 export interface Recipe {
     title: string, 
     ingredients: string[], 
-    directions: string, 
-    imgURL: string,
+    directions: string[], 
+    imgURL: string | undefined,
     _id: string, 
     creator: string,
     rating: number
-    time: string
+    cookTime: string
 }
 
 export interface Message {
